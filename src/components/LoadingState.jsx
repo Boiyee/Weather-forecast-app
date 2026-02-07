@@ -29,21 +29,17 @@ export default function LoadingState() {
           <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
             <div className="relative flex-1">
               <img
-                src={search}
-                alt=""
+                src={search} alt=""
                 className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-neutral-400 z-10"
               />
               <input
-                type="text"
-                placeholder="Search for a place..."
+                type="text" placeholder="Search for a place..." disabled
                 className="w-full pl-10 pr-4 py-3 glass-card rounded-lg text-white placeholder-neutral-300 focus:outline-none focus:ring-2 focus:ring-white transition-all duration-200"
-                disabled
               />
             </div>
 
             <button
-              type="button"
-              disabled
+              type="button" disabled
               className="px-6 py-3 bg-blue-600 hover:bg-blue-700 disabled:bg-neutral-600 disabled:cursor-not-allowed rounded-lg font-medium transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-white"
             >
               Search
@@ -59,22 +55,14 @@ export default function LoadingState() {
               <div className="text-center">
                 <div className="flex justify-center mb-4">
                   <div className="flex space-x-1">
-                    <div
-                      className="w-2 h-2 bg-white rounded-full animate-bounce"
-                      style={{ animationDelay: "0ms" }}
-                    ></div>
-                    <div
-                      className="w-2 h-2 bg-white rounded-full animate-bounce"
-                      style={{ animationDelay: "150ms" }}
-                    ></div>
-                    <div
-                      className="w-2 h-2 bg-white rounded-full animate-bounce"
-                      style={{ animationDelay: "300ms" }}
-                    ></div>
+                    <div className="w-2 h-2 bg-white rounded-full animate-bounce" style={{ animationDelay: "0ms" }}></div>
+                    <div className="w-2 h-2 bg-white rounded-full animate-bounce" style={{ animationDelay: "150ms" }}></div>
+                    <div className="w-2 h-2 bg-white rounded-full animate-bounce" style={{ animationDelay: "300ms" }}></div>
+                    <div className="w-2 h-2 bg-white rounded-full animate-bounce" style={{ animationDelay: "450ms" }}></div>
                   </div>
                 </div>
 
-                <div className="text-neutral-300">Loading...</div>
+                <div className="text-neutral-300">Loading....</div>
               </div>
             </div>
 
@@ -97,8 +85,7 @@ export default function LoadingState() {
               </h3>
               <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-7 gap-3">
                 {Array.from({ length: 7 }).map((_, index) => (
-                  <div
-                    key={index}
+                  <div key={index}
                     className="glass-card rounded-lg p-4 text-center animate-pulse"
                   >
                     <div className="h-4 glass-card rounded mb-2"></div>
@@ -127,8 +114,7 @@ export default function LoadingState() {
 
               <div className="space-y-3 max-h-96 overflow-y-auto">
                 {Array.from({ length: 8 }).map((_, index) => (
-                  <div
-                    key={index}
+                  <div key={index}
                     className="flex items-center justify-between py-2 px-2 animate-pulse"
                   >
                     <div className="flex items-center space-x-3">
