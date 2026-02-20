@@ -67,10 +67,10 @@ To see how you can add code snippets, see below:
 ```js
 // Fetch weather data from Open-Meteo API
 export const fetchWeatherData = async (lat, lon, units = "metric") => {
+
   const tempUnit = units === "metric" ? "celsius" : "fahrenheit";
   const windSpeedUnit = units === "metric" ? "kmh" : "mph";
   const precipitationUnit = units === "metric" ? "mm" : "inch";
-
 
   const url = `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&current=temperature_2m,relative_humidity_2m,apparent_temperature,precipi
 
@@ -101,4 +101,4 @@ Mobile-applications
 
 ## Acknowledgments
 
-Thanks to consistency, Youtube and me.
+Thanks to me, consistency and Youtube.
